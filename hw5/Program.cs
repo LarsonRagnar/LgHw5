@@ -70,7 +70,7 @@
 //             sum+= array[i];
 //         }
 //     }
-    
+
 // Console.WriteLine($"исходный массив: [{string.Join(";", array)}]\n\n");
 // Console.WriteLine($"Количество элементов : {sum}");
 
@@ -82,3 +82,49 @@
 // [3 7 22 2 78] -> 76
 
 // Используйте NextDouble().
+
+
+
+// Console.WriteLine("Введите число которое будет соответвовать количеству элеметов в массиве ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// Double[] array = GetArray(size);
+
+
+
+// Double[] GetArray(int size)
+// {
+//     double[] rndArray = new double[size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         rndArray[i] = new Random().NextDouble()*100;
+//         rndArray[i]= Math.Round(rndArray[i]);
+
+
+//     }
+//     return rndArray;
+// }
+
+
+// double countArray(double[] array)
+// {   
+//     double sizeArray = array.Length;
+//     double min = array[0];
+//     double max = array[0];
+
+//     for (int i = 0; i < sizeArray; i++)
+//    {    
+//         if (array[i] < min)
+//         {
+//             min = array[i];
+//         }
+//         else if (array[i] > max)
+//         {
+//             max = array[i];
+//         }
+
+//     }
+//     var diff = max - min;
+//     return diff;
+// }
+// Console.WriteLine($"исходный массив: [{string.Join(";", array)}]\n\n");
+// Console.WriteLine($"Разница между максимальным и минимальным значением в массиве : {countArray(array)}");
